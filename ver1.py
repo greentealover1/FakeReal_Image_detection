@@ -1,7 +1,12 @@
 import numpy as np
 import streamlit as st
 from PIL import Image
-import keras
+from tensorflow import keras
+
+# 모델 로드
+if "model" not in st.session_state:
+    st.session_state.model = keras.models.load_model('model.h5')
+
 
 #언어 설정
 if "language" not in st.session_state:
