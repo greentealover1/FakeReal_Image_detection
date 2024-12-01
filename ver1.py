@@ -6,7 +6,18 @@ from tensorflow import keras
 # 모델 로드
 if "model" not in st.session_state:
     st.session_state.model = keras.models.load_model('model.h5')
+# 사용자 정의 CSS 추가
+page_bg_style = """
+<style>
+    /* 전체 배경색 변경 */
+    .stApp {
+        background-color: #f4e1ff; /* 연보라색 */
+    }
+</style>
+"""
 
+# Streamlit 앱에 스타일 적용
+st.markdown(page_bg_style, unsafe_allow_html=True)
 
 #언어 설정
 if "language" not in st.session_state:
