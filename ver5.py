@@ -9,11 +9,6 @@ import os
 from dotenv import load_dotenv
 # GPT-4o API 설정
 GPT4O_API_URL = "https://api.openai.com/v1/chat/completions"
-#GPT4O_API_KEY = "sk-svcacct-gTs7WGJV79tILrE7sVMTe3Q7qP-0qlSXYZCzSWy-lpL3wDmwM21mYEKwx3j8YbT3BlbkFJBG2Iu9xC7Cw5FH5_cp2c78TswAkA0ipItUltr09UkXNyHhxKGSiQhvy4uM6TkA"  # OpenAI API 키를 입력하세요.
-
-# 환경 변수에서 API 키 가져오기 (Streamlit Secrets 사용)
-#GPT4O_API_KEY = st.secrets["openai"]["api_key"]  # 비밀 키 불러오기
-#GPT4O_API_KEY=os.getenv("sk-proj-1HYmZavxNlV7PYui14ugT3BlbkFJr0KwBq0QuNBPrkPyTbtk")
 
 # Load API key based on environment
 if "openai" in st.secrets:
