@@ -3,3 +3,4 @@ Pillow
 streamlit
 tensorflow
 deep-translator
+python-dotenv
