@@ -117,7 +117,7 @@ st.divider()
 if image_file is not None:
     raw_image = Image.open(image_file)
     rgb_image = raw_image.convert('RGB')
-    mini_image = rgb_image.resize(size=(224, 224))
+    mini_image = rgb_image.resize(size=(32, 32))
 
     image = np.array(mini_image, dtype='float')
     image = image / 255.0
